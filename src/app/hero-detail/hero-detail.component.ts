@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input  } from '@angular/core';
+import { Hero } from '../hero';
 
 @Component({
   selector: 'app-hero-detail',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
+
+  /*
+   * recive un modelo hero mediante un atributo html
+   * <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  */
+  @Input() hero: Hero;
 
   constructor() { }
 
