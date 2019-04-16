@@ -6,4 +6,11 @@ siguiendo el tutorial https://angular.io/tutorial
 
 
 Ejecutar el proyecto
-$: ng serve --open
+$ ng serve --open
+
+
+Generar un servicio
+$ ng generate service hero
+
+Generar un Componente
+$ ng generate component hero-detail
