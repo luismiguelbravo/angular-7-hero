@@ -1,7 +1,10 @@
+<div>
+  <div *ngIf="currentUser">
+
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-    Company name
+    www.senegocia.cl
   </a>
   <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
   <ul class="navbar-nav px-3">
@@ -39,11 +42,22 @@
               </button>
             </div>
           </div>
-
           <h2>Section title</h2>
           <div class="table-responsive">
+            currentUser {{ currentUser }}
             <app-login></app-login>
           </div>
         </main>
       </div>
     </div>
+
+
+
+  </div>
+  <div *ngIf="!currentUser">
+    <app-login></app-login>
+  </div>
+</div>
+
+
+

@@ -20,21 +20,12 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     this.getCurrentUser();
     this.countdownEndRef = this.userService.countdownEnd$.subscribe(()=>{
-      console.log("");
-      console.log(" =========== termino el logueo =========== ");
-      console.log("");
       this.getCurrentUser();
     });
   }
 
   getCurrentUser(): void {
     this.currentUser = this.userService.getCurrentUser();
-    
-    console.log("");
-    console.log(" =========== this.currentUser : login.component.ts =========== ");
-    console.log(this.currentUser);
-    console.log(" =========== this.currentUser : login.component.ts =========== ");
-    console.log("");
   }
 
   cerrarSesion(): void {
