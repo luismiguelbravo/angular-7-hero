@@ -9,9 +9,22 @@ import { UserService } from '../user.service';
 })
 export class LoginComponent implements OnInit {
 
+  currentUser : User;
+
   constructor(public userService: UserService) { }
 
   ngOnInit() {
+    this.getCurrentUser();
+  }
+
+  getCurrentUser(): void {
+    this.currentUser = this.userService.getCurrentUser();
+    
+    console.log("");
+    console.log(" =========== this.currentUser : login.component.ts =========== ");
+    console.log(this.currentUser);
+    console.log(" =========== this.currentUser : login.component.ts =========== ");
+    console.log("");
   }
 
 }

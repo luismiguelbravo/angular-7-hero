@@ -29,13 +29,7 @@ export class HeroesComponent implements OnInit {
   }
 
   login(): void {
-    this.userService.login("demo", "demo")
-        .subscribe( (data: any) => {
-                console.log(data);
-            }, error => {
-              console.log('Error');
-              console.log(error);
-          });
+    this.userService.login("demo", "demo");
   }
 
   onSelect(hero: Hero): void {
