@@ -14,3 +14,6 @@ $ ng generate service hero
 
 Generar un Componente
 $ ng generate component hero-detail
+
+
+ng generate service paises

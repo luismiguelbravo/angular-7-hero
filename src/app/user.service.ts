@@ -41,13 +41,6 @@ export class UserService {
                   this.currentUserSubject.next(this.usuario);
                   this.countdownEndSource.next();
                 }, error => {
-
-                  console.log("");
-                  console.log(" ============== error al loguearse ==============");
-                  console.log(error.error);
-                  console.log(" ============== error al loguearse ==============");
-                  console.log("");
-
                   this.errorAlLoguearse = error.error;
                   this.countdownEndSource.next();
               });
@@ -62,6 +55,10 @@ export class UserService {
 
   getErrorAlLoguearse() {
     return this.errorAlLoguearse;
+  }
+
+  getToken(){
+    return this.usuario.access_token;
   }
 
 }

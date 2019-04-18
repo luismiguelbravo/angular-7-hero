@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Busqueda } from '../busqueda'
+import { UserService } from '../user.service';
+import { PaisesService } from '../paises.service';
 
 @Component({
   selector: 'app-panel-de-busqueda',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PanelDeBusquedaComponent implements OnInit {
 
-  constructor() { }
+  busqueda_model: Busqueda;
+  showLoader: boolean;
+
+  constructor(public userService: UserService, public paisesService: PaisesService) { 
+    this.busqueda_model = { pais: null };
+    this.showLoader = false;
+  }
 
   ngOnInit() {
+    this.cargarPaises();
   }
+
+  cargarPaises() {
+    this.paisesService.getAll(this.userService.getToken());
+  }
+
+  buscar() {
+    console.log(" ======== funcion buscar ======== ");
+  }
+
 
 }

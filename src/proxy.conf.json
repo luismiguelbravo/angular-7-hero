@@ -7,5 +7,14 @@
     },
     "changeOrigin": true,
     "logLevel": "debug"
+  },
+  "/getListaDePaises": {
+    "target": "http://rcid.cl/api/sn5/pais/All",
+    "secure": false,
+    "pathRewrite": {
+      "^/getListaDePaises": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
   }
 }
