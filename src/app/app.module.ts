@@ -11,6 +11,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { LoginComponent } from './login/login.component'; // <-- NgModel lives here
 
 import { HttpClientModule } from '@angular/common/http';
+import { PanelDeBusquedaComponent } from './panel-de-busqueda/panel-de-busqueda.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    LoginComponent
+    LoginComponent,
+    PanelDeBusquedaComponent
   ],
   imports: [
     BrowserModule,

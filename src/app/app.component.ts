@@ -11,13 +11,15 @@ import { User } from './user';
 export class AppComponent {
   title = 'www.senegocia.cl';
   currentUser : User;
-  
+  boolPanelDeBusquedaYResultado : boolean;
+
   private countdownEndRef: Subscription = null;  
   private logOutEndSubscription: Subscription = null;
 
   constructor(public userService: UserService) { }
 
   ngOnInit() {
+    this.boolPanelDeBusquedaYResultado = false;
     this.getCurrentUser();
     this.countdownEndRef = this.userService.countdownEnd$.subscribe(()=>{
       this.getCurrentUser();
@@ -36,6 +38,10 @@ export class AppComponent {
   cerrarSesion(): void {
     this.userService.logOut();
     this.currentUser = this.userService.getCurrentUser();
+  }
+
+  mostrarPanelDeBusquedaYResultado(): void {
+    this.boolPanelDeBusquedaYResultado = true;
   }
 
 }
