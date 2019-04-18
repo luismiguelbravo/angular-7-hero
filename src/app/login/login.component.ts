@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-    let cualquiervaina = this.userService.login("demo", "demo");
+    this.userService.login("demo", "demo");
   }
 
 }
