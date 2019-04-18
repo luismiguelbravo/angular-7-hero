@@ -33,5 +33,9 @@ export class AppComponent {
     this.currentUser = this.userService.getCurrentUser();
   }
 
+  cerrarSesion(): void {
+    this.userService.logOut();
+    this.currentUser = this.userService.getCurrentUser();
+  }
 
 }
