@@ -1,25 +1,11 @@
-<p *ngIf="currentUser">
-  login works!
-  inicio usuario actual <br>
-  username {{ currentUser.username }}<br>
-  access_token {{ currentUser.access_token }}<br>
-  fin usuario actual<br>
-  <button (click)="cerrarSesion()" > Cerrar Sesión </button>
-</p>
 <div *ngIf="!currentUser">
-  <!-- No existe ningun usuario logueado -->
-  <!-- button (click)="login()" > Iniciar Sesión </button-->
-
   <div class="row" style="margin-top: 50px;">
     <div class="col-md-3"></div>
     <div class="col-md-6" style="background-color: #e7e8ea; border-radius: 9px;">
-
       <div *ngIf="errorAlLoguearse.Message" style="background-color: #d86565; margin-top: 15px; text-align: center;">
         {{ errorAlLoguearse.Message }}
       </div>
-
       <form style="padding: 15px 20px;">
-
         <div class="form-group">
           <label for="exampleInputEmail1">Nombre de usuario</label>
           <input id="name" name="name" class="form-control" required minlength="1" [(ngModel)]="loginUser.username">
@@ -28,9 +14,7 @@
           <label for="exampleInputPassword1">Clave</label>
           <input id="password" name="password" class="form-control" required minlength="1" [(ngModel)]="loginUser.password">
         </div>
-
         <button (click)="login()" *ngIf="this.showLoader === false"> Iniciar Sesión </button>
-
         <div class="loader loader--style6" title="5" *ngIf="this.showLoader">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
           <rect x="0" y="7.72768" width="4" height="15.5446" fill="#333">
@@ -47,12 +31,8 @@
           </rect>
           </svg>
         </div>
-
-
-
       </form>
     </div>
     <div class="col-md-3"></div>
   </div>
-
 </div>

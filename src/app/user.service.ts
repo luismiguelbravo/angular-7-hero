@@ -11,6 +11,7 @@ export class UserService {
   private currentUserSubject: BehaviorSubject<User>;
   currentUser : Observable<User>;
   usuario : User;
+  errorAlLoguearse : any;
 
     private countdownEndSource = new Subject<void>();
     public countdownEnd$ = this.countdownEndSource.asObservable();
@@ -30,7 +31,7 @@ export class UserService {
   }
 
   login(username: string, password: string):any {
-    this.usuario = {'username' : null, 'access_token' : null};
+    this.usuario = {'username' : null, password: null,'access_token' : null};
     this.http.get<any>("Authorized?data=%7B%22username%22:%22" + 
       username + "%22,%22password%22:%22" + password +  "%22%7D" )
         .subscribe( (data: any) => {
@@ -40,6 +41,14 @@ export class UserService {
                   this.currentUserSubject.next(this.usuario);
                   this.countdownEndSource.next();
                 }, error => {
+
+                  console.log("");
+                  console.log(" ============== error al loguearse ==============");
+                  console.log(error.error);
+                  console.log(" ============== error al loguearse ==============");
+                  console.log("");
+
+                  this.errorAlLoguearse = error.error;
                   this.countdownEndSource.next();
               });
   }
@@ -49,6 +58,10 @@ export class UserService {
     localStorage.removeItem('currentUser');
     this.currentUserSubject.next(null);
     this.logOutEnd.next();
+  }
+
+  getErrorAlLoguearse() {
+    return this.errorAlLoguearse;
   }
 
 }

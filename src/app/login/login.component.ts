@@ -14,14 +14,22 @@ export class LoginComponent implements OnInit {
   private countdownEndRef: Subscription = null;
 
   currentUser : User;
+  loginUser: User;
+  errorAlLoguearse :any;
+  showLoader: boolean;
 
   constructor(public userService: UserService) { }
 
   ngOnInit() {
+    this.errorAlLoguearse = {Message: "", Description: ""};
+    this.showLoader = false;
     this.getCurrentUser();
     this.countdownEndRef = this.userService.countdownEnd$.subscribe(()=>{
       this.getCurrentUser();
+      this.errorAlLoguearse = this.userService.getErrorAlLoguearse();
+      this.showLoader = false;
     });
+    this.loginUser =  {'username' : null, password: null,'access_token' : null};
   }
 
   getCurrentUser(): void {
@@ -34,7 +42,9 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-    this.userService.login("demo", "demo");
+    this.showLoader = true;
+    this.errorAlLoguearse = {Message: "", Description: ""};
+    this.userService.login(this.loginUser.username, this.loginUser.password);
   }
 
 }

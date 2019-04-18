@@ -1,23 +1,23 @@
 <div>
   <div *ngIf="currentUser">
 
-<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
-      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-      <polyline points="2 17 12 22 22 17"></polyline>
-      <polyline points="2 12 12 17 22 12"></polyline>
-    </svg>
-    se negocia
-  </a>
-  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Búscar">
-  <ul class="navbar-nav px-3">
-    <li class="nav-item text-nowrap">
-      <a class="nav-link" (click)="cerrarSesion()" style="cursor: pointer;">cerrar sesión</a>
-    </li>
-  </ul>
-</nav>
-<div class="container-fluid">
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+        se negocia
+      </a>
+      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Búscar">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" (click)="cerrarSesion()" style="cursor: pointer;">cerrar sesión</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container-fluid">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
@@ -48,14 +48,11 @@
           </div>
           <h2>Section title</h2>
           <div class="table-responsive">
-            currentUser {{ currentUser }}
-            <app-login></app-login>
+            currentUser {{ currentUser.username }}
           </div>
         </main>
       </div>
     </div>
-
-
 
   </div>
   <div *ngIf="!currentUser">
