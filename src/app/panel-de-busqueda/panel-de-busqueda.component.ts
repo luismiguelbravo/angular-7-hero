@@ -23,7 +23,8 @@ export class PanelDeBusquedaComponent implements OnInit {
   }
 
   cargarPaises() {
-    this.paisesService.getAll(this.userService.getToken());
+    console.log(" ======== funcion cargarPaises ======== ");
+    // this.paisesService.getAll(this.userService.getToken());
   }
 
   buscar() {
