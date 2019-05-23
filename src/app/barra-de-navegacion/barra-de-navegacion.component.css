@@ -1,7 +1,7 @@
 .imagen-logo {
     width: 126px;
     height: 41px;
-    padding-left: 30px;
+    
 }
 
 a {
@@ -9,7 +9,20 @@ a {
 }
 
 @media(min-width:767px){
-  .hamburguesa {
-    display: none;
-  }
+    .hamburguesa {
+        display: none;
+    }
+
+    .imagen-logo {
+        margin-left: 30px;
+    }
+
+
+}
+.hamburguesa {
+    right: 30px;
+    position: absolute;
+    top: 20px;
+    font-size: 29px;
+    color: #1a67a7;
 }
