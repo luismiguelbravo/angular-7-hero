@@ -1,0 +1,15 @@
+.imagen-logo {
+    width: 126px;
+    height: 41px;
+    padding-left: 30px;
+}
+
+a {
+    cursor: pointer;
+}
+
+@media(min-width:767px){
+  .hamburguesa {
+    display: none;
+  }
+}

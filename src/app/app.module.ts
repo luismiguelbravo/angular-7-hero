@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component'; // <-- NgModel lives h
 
 import { HttpClientModule } from '@angular/common/http';
 import { PanelDeBusquedaComponent } from './panel-de-busqueda/panel-de-busqueda.component';
+import { BarraDeNavegacionComponent } from './barra-de-navegacion/barra-de-navegacion.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PanelDeBusquedaComponent } from './panel-de-busqueda/panel-de-busqueda.
     HeroDetailComponent,
     MessagesComponent,
     LoginComponent,
-    PanelDeBusquedaComponent
+    PanelDeBusquedaComponent,
+    BarraDeNavegacionComponent
   ],
   imports: [
     BrowserModule,

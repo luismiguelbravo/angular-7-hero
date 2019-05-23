@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'heroes', component: HeroesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'panel-de-busqueda', component: PanelDeBusquedaComponent },
-  { path: '', redirectTo: 'panel-de-busqeuda', pathMatch: 'full' }
+  { path: '', redirectTo: 'panel-de-busqueda', pathMatch: 'full' }
 ];
 
 @NgModule({

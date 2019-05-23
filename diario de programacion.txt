@@ -1,0 +1,2 @@
+Generar un Componente 
+    $ ng generate component barra-de-navegacion
