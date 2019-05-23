@@ -34,13 +34,12 @@
 }
 
 .Background-package {
-    width: 303px;
+    width: 306px;
     height: 206px;
     display: block;
     background-image: url(../../../assets/img/background-package.png);
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid;
     margin: 0 auto 23px auto;
 }
 
@@ -48,6 +47,19 @@
   min-height: 100% !important;
 }
 
+@media(max-width:767px) {
+    .box-bolsas-prepago {
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+        padding: 12px 17px;
+        margin: 8px 9px;
+    }
+    .box-bolsas-prepago .Background-package {
+        width: 265px;    
+    }
+    
+}
 
 
 
