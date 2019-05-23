@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraDeNavegacionComponent implements OnInit {
 
+    mostrarMenu = false;
+
     constructor() { }
 
     ngOnInit() {
@@ -14,6 +16,10 @@ export class BarraDeNavegacionComponent implements OnInit {
 
     cerrarSesion() {
         console.log("cerrarSesion()");
+    }
+
+    toggleMenu() {
+        this.mostrarMenu = !this.mostrarMenu
     }
 
 }

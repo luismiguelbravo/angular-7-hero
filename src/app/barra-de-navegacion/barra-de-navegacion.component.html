@@ -3,15 +3,15 @@
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
             <img class="imagen-logo" src="https://awto.cl/assets/img/logo-header-internal.svg">
         </a>
-        <i class="hamburguesa navbar-toggler-icon fa fa-bars"> </i>
+        <i class="hamburguesa navbar-toggler-icon fa fa-bars" (click)="toggleMenu()"> </i>
   
 
 
-        <!-- ul class="navbar-nav px-3">
+        <ul class="navbar-nav px-3" *ngIf="mostrarMenu">
             <li class="nav-item text-nowrap">
                 <a class="nav-link" (click)="cerrarSesion()">cerrar sesión</a>
             </li>
-        </ul-->
+        </ul>
 
   
 </nav>
