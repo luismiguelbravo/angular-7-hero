@@ -2,3 +2,5 @@ Generar un Componente
     $ ng generate component barra-de-navegacion
 
     $ ng generate component menu-lateral
+
+    $ ng generate component paginas/bolsa-prepago
