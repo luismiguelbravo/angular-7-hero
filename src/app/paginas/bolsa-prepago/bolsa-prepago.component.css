@@ -31,3 +31,27 @@
     letter-spacing: normal;
     color: #818181;
 }
+
+.Background-package {
+    width: 303px;
+    height: 206px;
+    display: block;
+    background-image: url(../../../assets/img/background-package.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid;
+    margin-bottom: 23px;
+}
+
+.container-fluid {
+  min-height: 100% !important;
+}
+
+
+
+
+
+
+
+
+

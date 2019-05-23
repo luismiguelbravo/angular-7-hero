@@ -1,0 +1,15 @@
+.sidebar-sticky{
+    background-color: white;
+    margin-left: 15px;
+}
+
+td {
+    vertical-align: top;
+}
+
+.menu-lateral {
+    padding-top: 33px;
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+}
