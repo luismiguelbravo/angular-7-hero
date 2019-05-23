@@ -10,7 +10,7 @@ a {
     margin-right: 4px;
 }
 
-a:hover  {
+a:hover {
     color: white !important;
     border-radius: 20.5px;
     background-color: #3366a2;  
@@ -20,4 +20,14 @@ a:hover  {
     .cerrar-sesion-mobile {
         display: none;
     }
+    a {
+        margin-top: 10px !important;
+    }
+
+    .active {
+        color: white !important;
+        border-radius: 20.5px;
+        background-color: #3366a2;  
+    }
+
 }
