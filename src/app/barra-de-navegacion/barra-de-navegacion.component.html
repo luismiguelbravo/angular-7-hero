@@ -4,15 +4,17 @@
             <img class="imagen-logo" src="https://awto.cl/assets/img/logo-header-internal.svg">
         </a>
         <i class="hamburguesa navbar-toggler-icon fa fa-bars" (click)="toggleMenu()"> </i>
-  
-
 
         <ul class="navbar-nav px-3" *ngIf="mostrarMenu">
-            <app-menu-lateral></app-menu-lateral>
-            <li class="nav-item text-nowrap">
-                <a class="nav-link" (click)="cerrarSesion()">cerrar sesión</a>
+            <app-menu-lateral ></app-menu-lateral>
+        </ul>
+
+        <ul class="navbar-nav px-3 cerrar-sesion-desktop">
+            <li class="nav-item text-nowrap" >
+                <a class="nav-link" (click)="cerrarSesion()">CERRAR SESION</a>
             </li>
         </ul>
+
 </nav>
 
 <div class="container-fluid">

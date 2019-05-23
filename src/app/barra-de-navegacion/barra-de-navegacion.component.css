@@ -7,7 +7,7 @@ a {
     cursor: pointer;
 }
 
-@media(min-width:767px){
+@media(min-width:767px) {
     .hamburguesa {
         display: none;
     }
@@ -16,6 +16,19 @@ a {
         margin-left: 30px;
     }
 }
+
+@media(max-width:767px){
+    .cerrar-sesion-desktop {
+        display: none;
+    }
+}
+.cerrar-sesion-desktop {
+    color: #3366a2 !important;
+    font-weight: lighter;
+    margin-right: 30px;
+}
+
+
 
 .hamburguesa {
     right: 0;
