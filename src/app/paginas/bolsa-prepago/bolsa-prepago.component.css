@@ -3,6 +3,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
   padding: 28px 27px;
+  margin: 20px 30px;
 }
 
 @font-face {
@@ -40,7 +41,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border: solid;
-    margin-bottom: 23px;
+    margin: 0 auto 23px auto;
 }
 
 .container-fluid {
