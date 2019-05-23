@@ -1,0 +1,33 @@
+.box-bolsas-prepago {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  padding: 28px 27px;
+}
+
+@font-face {
+  font-family: PTSans;
+  src: url(../../../assets/fonts/PT_sans/PT_Sans-Web-Regular.ttf);
+}
+
+.Bolsas-prepago-Awto {
+    font-family: PTSans;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #818181;
+}
+
+.Lorem-ipsum-dolor-si {
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #818181;
+}
