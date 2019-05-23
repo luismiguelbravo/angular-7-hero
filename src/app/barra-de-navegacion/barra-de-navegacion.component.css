@@ -24,3 +24,16 @@ a {
     font-size: 29px;
     color: #1a67a7;
 }
+
+.menu-lateral {
+    padding-top: 33px;
+    padding-left: 30px;
+}
+
+.sidebar-sticky{
+    background-color: white;   
+}
+
+.sidebar {
+    margin-left: 15px;
+}

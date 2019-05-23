@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraDeNavegacionComponent implements OnInit {
 
-    mostrarMenu = true;
+    mostrarMenu = false;
 
     constructor() { }
 

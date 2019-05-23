@@ -1,0 +1,9 @@
+a {
+    color: #3366a2 !important;
+    font-weight: lighter !important;
+}
+
+.nav-link i {
+    width: 23px;
+    margin-right: 4px;
+}
